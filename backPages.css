@@ -64,5 +64,52 @@ body{
       border: 1px solid black;
   }
 
+  /* Mission CSS*/
 
+  .missionBody {
+    color: white;
+    background-color: black;
+  }
+  
+  .missionBody h1 {
+    font-size:300%;
+    text-align: center;
+    height:200px;
+  }
+  
+  .row1 {
+    display: flex;
+  }
+  
+  .row1 p {
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+  }
+  
+  .row2 {
+    display: flex;
+    margin-top: 100px;
+  }
+  
+  .row2 p {
+    width: 50%;
+    margin:0 20% 5% 20%;
+  }
+
+  .pcWoman {
+      margin-left: 5%;
+  }
+
+  .camMan {
+      margin-right: 5%;
+      margin-bottom: 10%;
+  }
+
+  .mainFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
