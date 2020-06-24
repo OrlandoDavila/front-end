@@ -20,6 +20,7 @@ time, mark, audio, video {
 }
 
 html {
+    max-width: 100%;
     width: 100%;
     font-size: 62.5%;
     font-family: 'Bitter', serif;
@@ -29,7 +30,8 @@ html {
         display: flex;
         justify-content: center;
         font-size: 30px;
-        margin: 80px;
+        margin: 2vw;
+        max-width: 100%;
 }
 
 .navigation nav a {
@@ -41,6 +43,8 @@ body{
     background: url("https://images.unsplash.com/photo-1483794344563-d27a8d18014e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
     background-repeat: no-repeat;
     background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed;
     font-size: 20px; 
   }
   
@@ -61,14 +65,22 @@ body{
       width: 30%;
       text-align: center;
       padding: 5%;
-      border: 1px solid black;
+  }
+
+  #submit_button {
+      background-color: rgba(112,255,112,0.7);
   }
 
   /* Mission CSS*/
 
+  .mainImage {
+      max-width: 100%;
+  }
+
   .missionBody {
-    color: white;
-    background-color: black;
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 100%;
   }
   
   .missionBody h1 {
@@ -76,9 +88,14 @@ body{
     text-align: center;
     height:200px;
   }
+
+  .middleNav a{
+      text-decoration: none;
+  }
   
   .row1 {
     display: flex;
+
   }
   
   .row1 p {
@@ -100,6 +117,7 @@ body{
 
   .pcWoman {
       margin-left: 5%;
+      height: auto;
   }
 
   .camMan {
@@ -113,3 +131,50 @@ body{
     align-items: center;
   }
   
+
+  @media screen and (max-width: 500px) {
+      .form {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+      }
+
+      .form div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+    .body {
+      max-width: 100%; 
+      width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mainImage {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .missionBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .missionBody .row1 .row2 {
+        display: flex;
+    }
+
+    .pcWoman {
+        margin: auto;
+    }
+
+    .camMan {
+        margin: 0;
+    }
+  }
