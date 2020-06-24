@@ -89,12 +89,18 @@ body{
     height:200px;
   }
 
+  .middleNav {
+    display: flex;
+    flex-direction: column;
+  }
+
   .middleNav a{
       text-decoration: none;
   }
   
   .row1 {
     display: flex;
+
 
   }
   
@@ -115,12 +121,19 @@ body{
     margin:0 20% 5% 20%;
   }
 
-  .pcWoman {
-      margin-left: 5%;
-      height: auto;
+  .missionBody img {
+      width: 90%;
   }
 
-  .camMan {
+  .missionBody {
+    
+  }
+
+  .pcWoman img{
+     width: 90%;
+  }
+
+  .camMan img{
       margin-right: 5%;
       margin-bottom: 10%;
   }
@@ -129,8 +142,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+ 
   }
-  
+   #home {
+    position: fixed;
+    Width: 100%;
+    bottom: 0;
+   }
 
   @media screen and (max-width: 500px) {
       .form {
@@ -164,17 +182,30 @@ body{
     .missionBody {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
-    .missionBody .row1 .row2 {
-        display: flex;
+    .pcWoman img {
+        height: 500px;
     }
-
     .pcWoman {
         margin: auto;
+        display: flex;
+        justify-content: center;
     }
 
     .camMan {
-        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .row1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row2 {
+        display: flex;
+        flex-direction: column-reverse;
     }
   }
