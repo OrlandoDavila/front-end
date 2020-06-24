@@ -125,17 +125,15 @@ body{
       width: 90%;
   }
 
-  .missionBody {
-    
-  }
-
   .pcWoman img{
      width: 90%;
+     margin-left: 50%;
+     height: 400px;
   }
 
   .camMan img{
-      margin-right: 5%;
       margin-bottom: 10%;
+      padding-right: 20%;
   }
 
   .mainFooter {
@@ -187,11 +185,16 @@ body{
 
     .pcWoman img {
         height: 500px;
+        margin: 0;
     }
     .pcWoman {
         margin: auto;
         display: flex;
         justify-content: center;
+    }
+
+    .camMan img {
+        padding: 0;
     }
 
     .camMan {
